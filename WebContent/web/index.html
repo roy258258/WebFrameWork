@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="javascript/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$.ajax({
+			type : "post",
+			dataType : "json",
+			url : "../Rest/DemoRest!getWaterProjects",
+		
+			data : {
+				para3 : "参数3",
+				para4 : "para4"
+				
+			},
+			success : function(json) {
+				if (null != json && json.length != 0) {
+
+				}
+			},
+			error : function(XMLHttpRequest, textStatus, errorThrown) {
+			}
+		});
+	});
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
